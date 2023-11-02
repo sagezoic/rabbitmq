@@ -2,5 +2,12 @@
   "name": "RabbitMQ",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "scripts": {
+    "publish": "node publisher.js",
+    "consumer": "node consumer.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
 }

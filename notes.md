@@ -14,7 +14,7 @@ These are my short notes about RabbitMQ
 2. It has layer
 3. Components:
     ```
-    3.1. RabbitMQ Server
+    3.1. RabbitMQ Server: Also known as exchange.
     3.2. Publisher: Under lying protocol is TCP. Two-way communication between Server and Publisher. Publisher sends messages to the server.
     3.3. Consumer: Who consumes messages. Under lying protocol is TCP (AMQP-Advanced Message Queue Protocol). Server pushes messages to the consumer when they are ready.
     ```
@@ -30,13 +30,16 @@ These are my short notes about RabbitMQ
 We will build a Async Job Engine
 ![Alt text](image-1.png)
 
-## Write a Publisher client NodeJS
-Instructions on how to use the project.
+## Publisher
 
-## Write a Consumer client NodeJS
+## Consumer
 
-Guidelines on how to contribute to the project.
+RabbitMQ guarantee is at least or at most once delivery. There is nothing like exactly guarantee.
+
+![Alt text](image-2.png)
 
 ## Summary
+kafka approach: 
+rabbitmq approach:
 
 Information about the project's license.
